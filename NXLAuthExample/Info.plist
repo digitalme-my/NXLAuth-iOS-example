@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>YOUR_BUNDLE_ID</string>
+				<string>com.jason.testappauth</string>
 			</array>
 		</dict>
 	</array>

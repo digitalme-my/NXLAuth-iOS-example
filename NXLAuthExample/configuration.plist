@@ -6,11 +6,11 @@
 	<array>
 		<dict>
 			<key>Issuer</key>
-			<string>https://issuer.example.com</string>
+			<string>https://auth.sso.unifi.space</string>
 			<key>ClientID</key>
-			<string>YOUR_CLIENT_ID</string>
+			<string>99917a29-ffa7-45b6-843b-4602319895c3</string>
 			<key>RedirectURI</key>
-			<string>com.example.app:/oauth2redirect/example-provider</string>
+			<string>com.jason.testappauth:/oauth2redirect</string>
 		</dict>
 	</array>
 </dict>
