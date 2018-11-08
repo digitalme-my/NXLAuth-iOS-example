@@ -57,6 +57,8 @@ The scheme is everything before the colon (`:`).  For example, if the redirect
 URI is `com.example.app:/oauth2redirect/example-provider`, then the scheme
 would be `com.example.app`.
 
+![info_plist](/images/info_plist.png)
+
 ### Running the Example
 
 Now your example should be ready to run.
