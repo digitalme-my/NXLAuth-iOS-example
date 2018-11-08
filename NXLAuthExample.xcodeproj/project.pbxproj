@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D2697D697DF9E024DF8F43B /* libPods-NXLAuthExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A1F8965EACDA6A5FB2023A /* libPods-NXLAuthExample.a */; };
+		96801175217868730058AEDF /* configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96801174217868730058AEDF /* configuration.plist */; };
+		96CDBA60219275E700F7EB57 /* NXLAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CDBA5E219275DE00F7EB57 /* NXLAuth.framework */; };
+		96CDBA61219275E700F7EB57 /* NXLAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 96CDBA5E219275DE00F7EB57 /* NXLAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		96F40EA4216DAFBC00B4DD85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F40EA3216DAFBC00B4DD85 /* AppDelegate.m */; };
+		96F40EA7216DAFBC00B4DD85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F40EA6216DAFBC00B4DD85 /* ViewController.m */; };
+		96F40EAA216DAFBC00B4DD85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F40EA8216DAFBC00B4DD85 /* Main.storyboard */; };
+		96F40EAC216DAFBD00B4DD85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F40EAB216DAFBD00B4DD85 /* Assets.xcassets */; };
+		96F40EAF216DAFBD00B4DD85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F40EAD216DAFBD00B4DD85 /* LaunchScreen.storyboard */; };
+		96F40EB2216DAFBD00B4DD85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F40EB1216DAFBD00B4DD85 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		963B0D3D2175C18400B538F9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				96CDBA61219275E700F7EB57 /* NXLAuth.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B58EC3E3FC3A98AD0299E57 /* Pods-NXLAuthExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NXLAuthExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-NXLAuthExample/Pods-NXLAuthExample.release.xcconfig"; sourceTree = "<group>"; };
+		56A1F8965EACDA6A5FB2023A /* libPods-NXLAuthExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NXLAuthExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72137142F6C8BFCEB56545F3 /* libPods-testAppAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testAppAuth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96801174217868730058AEDF /* configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = configuration.plist; sourceTree = "<group>"; };
+		96CDBA5E219275DE00F7EB57 /* NXLAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NXLAuth.framework; sourceTree = "<group>"; };
+		96F40E9F216DAFBC00B4DD85 /* NXLAuthExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NXLAuthExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F40EA2216DAFBC00B4DD85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		96F40EA3216DAFBC00B4DD85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		96F40EA5216DAFBC00B4DD85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		96F40EA6216DAFBC00B4DD85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		96F40EA9216DAFBC00B4DD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96F40EAB216DAFBD00B4DD85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96F40EAE216DAFBD00B4DD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96F40EB0216DAFBD00B4DD85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96F40EB1216DAFBD00B4DD85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D817748EF4F85141029CA030 /* Pods-NXLAuthExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NXLAuthExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NXLAuthExample/Pods-NXLAuthExample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96F40E9C216DAFBC00B4DD85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CDBA60219275E700F7EB57 /* NXLAuth.framework in Frameworks */,
+				6D2697D697DF9E024DF8F43B /* libPods-NXLAuthExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AEAB5ACD3DBCE66EB8A0435 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D817748EF4F85141029CA030 /* Pods-NXLAuthExample.debug.xcconfig */,
+				0B58EC3E3FC3A98AD0299E57 /* Pods-NXLAuthExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96F40E96216DAFBC00B4DD85 = {
+			isa = PBXGroup;
+			children = (
+				96CDBA5E219275DE00F7EB57 /* NXLAuth.framework */,
+				96F40EA1216DAFBC00B4DD85 /* NXLAuthExample */,
+				96F40EA0216DAFBC00B4DD85 /* Products */,
+				96F40EEA216DB12700B4DD85 /* Frameworks */,
+				5AEAB5ACD3DBCE66EB8A0435 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		96F40EA0216DAFBC00B4DD85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96F40E9F216DAFBC00B4DD85 /* NXLAuthExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96F40EA1216DAFBC00B4DD85 /* NXLAuthExample */ = {
+			isa = PBXGroup;
+			children = (
+				96F40EA2216DAFBC00B4DD85 /* AppDelegate.h */,
+				96F40EA3216DAFBC00B4DD85 /* AppDelegate.m */,
+				96F40EA5216DAFBC00B4DD85 /* ViewController.h */,
+				96F40EA6216DAFBC00B4DD85 /* ViewController.m */,
+				96F40EA8216DAFBC00B4DD85 /* Main.storyboard */,
+				96F40EAB216DAFBD00B4DD85 /* Assets.xcassets */,
+				96F40EAD216DAFBD00B4DD85 /* LaunchScreen.storyboard */,
+				96F40EB0216DAFBD00B4DD85 /* Info.plist */,
+				96F40EB1216DAFBD00B4DD85 /* main.m */,
+				96801174217868730058AEDF /* configuration.plist */,
+			);
+			path = NXLAuthExample;
+			sourceTree = "<group>";
+		};
+		96F40EEA216DB12700B4DD85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72137142F6C8BFCEB56545F3 /* libPods-testAppAuth.a */,
+				56A1F8965EACDA6A5FB2023A /* libPods-NXLAuthExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96F40E9E216DAFBC00B4DD85 /* NXLAuthExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96F40EB5216DAFBD00B4DD85 /* Build configuration list for PBXNativeTarget "NXLAuthExample" */;
+			buildPhases = (
+				02C21183F7F50F2A40C6A643 /* [CP] Check Pods Manifest.lock */,
+				96F40E9B216DAFBC00B4DD85 /* Sources */,
+				96F40E9C216DAFBC00B4DD85 /* Frameworks */,
+				96F40E9D216DAFBC00B4DD85 /* Resources */,
+				963B0D3D2175C18400B538F9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NXLAuthExample;
+			productName = testAppAuth;
+			productReference = 96F40E9F216DAFBC00B4DD85 /* NXLAuthExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96F40E97216DAFBC00B4DD85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Jaosn Lee";
+				TargetAttributes = {
+					96F40E9E216DAFBC00B4DD85 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 96F40E9A216DAFBC00B4DD85 /* Build configuration list for PBXProject "NXLAuthExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96F40E96216DAFBC00B4DD85;
+			productRefGroup = 96F40EA0216DAFBC00B4DD85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96F40E9E216DAFBC00B4DD85 /* NXLAuthExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96F40E9D216DAFBC00B4DD85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F40EAF216DAFBD00B4DD85 /* LaunchScreen.storyboard in Resources */,
+				96801175217868730058AEDF /* configuration.plist in Resources */,
+				96F40EAC216DAFBD00B4DD85 /* Assets.xcassets in Resources */,
+				96F40EAA216DAFBC00B4DD85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02C21183F7F50F2A40C6A643 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NXLAuthExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96F40E9B216DAFBC00B4DD85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96F40EA7216DAFBC00B4DD85 /* ViewController.m in Sources */,
+				96F40EB2216DAFBD00B4DD85 /* main.m in Sources */,
+				96F40EA4216DAFBC00B4DD85 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96F40EA8216DAFBC00B4DD85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96F40EA9216DAFBC00B4DD85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96F40EAD216DAFBD00B4DD85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96F40EAE216DAFBD00B4DD85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96F40EB3216DAFBD00B4DD85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		96F40EB4216DAFBD00B4DD85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96F40EB6216DAFBD00B4DD85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D817748EF4F85141029CA030 /* Pods-NXLAuthExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RMK9WR9RU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = NXLAuthExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.testAppAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96F40EB7216DAFBD00B4DD85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B58EC3E3FC3A98AD0299E57 /* Pods-NXLAuthExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RMK9WR9RU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = NXLAuthExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.testAppAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96F40E9A216DAFBC00B4DD85 /* Build configuration list for PBXProject "NXLAuthExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F40EB3216DAFBD00B4DD85 /* Debug */,
+				96F40EB4216DAFBD00B4DD85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96F40EB5216DAFBD00B4DD85 /* Build configuration list for PBXNativeTarget "NXLAuthExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F40EB6216DAFBD00B4DD85 /* Debug */,
+				96F40EB7216DAFBD00B4DD85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96F40E97216DAFBC00B4DD85 /* Project object */;
+}
