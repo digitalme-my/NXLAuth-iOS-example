@@ -1,11 +1,9 @@
-# NXLAuth for iOS Example
+# NXLAuth for iOS Example Project
 
 The examples need to be configured with an OpenID Connect issuer (or
 Authorization and Token endpoints manually), and the OAuth client information
 like the Client ID and Redirect URI.
 
-
-# NXLAuth Example Project
 
 ## Setup & Open the Project
 
