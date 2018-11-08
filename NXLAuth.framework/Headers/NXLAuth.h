@@ -43,8 +43,8 @@ FOUNDATION_EXPORT const unsigned char NXLAuthVersionString[];
  extensions (standard or otherwise) with the ability to handle additional params
  in all protocol requests and responses.
  
- <b>Homepage</b>: http://nexlife.github.io/AppAuth-iOS/ <br>
- <b>API Documentation</b>: http://nexlife/AppAuth-iOS/docs/latest <br>
+ <b>Homepage</b>: https://nexlife.github.io/NXLAuth-iOS/ <br>
+ <b>API Documentation</b>: https://nexlife.github.io/NXLAuth-iOS/doc/html/ <br>
  <b>Git Repository</b>: https://github.com/openid/AppAuth-iOS <br>
  
  */

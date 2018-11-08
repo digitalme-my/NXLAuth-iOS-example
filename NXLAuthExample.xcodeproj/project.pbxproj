@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		6D2697D697DF9E024DF8F43B /* libPods-NXLAuthExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A1F8965EACDA6A5FB2023A /* libPods-NXLAuthExample.a */; };
 		96801175217868730058AEDF /* configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96801174217868730058AEDF /* configuration.plist */; };
-		96CDBA60219275E700F7EB57 /* NXLAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CDBA5E219275DE00F7EB57 /* NXLAuth.framework */; };
-		96CDBA61219275E700F7EB57 /* NXLAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 96CDBA5E219275DE00F7EB57 /* NXLAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		96D1D5D12193C79800618663 /* NXLAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D1D5D02193C79800618663 /* NXLAuth.framework */; };
+		96D1D5D22193C79F00618663 /* NXLAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D1D5D02193C79800618663 /* NXLAuth.framework */; };
+		96D1D5D32193C79F00618663 /* NXLAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 96D1D5D02193C79800618663 /* NXLAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		96F40EA4216DAFBC00B4DD85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F40EA3216DAFBC00B4DD85 /* AppDelegate.m */; };
 		96F40EA7216DAFBC00B4DD85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F40EA6216DAFBC00B4DD85 /* ViewController.m */; };
 		96F40EAA216DAFBC00B4DD85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F40EA8216DAFBC00B4DD85 /* Main.storyboard */; };
@@ -26,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				96CDBA61219275E700F7EB57 /* NXLAuth.framework in Embed Frameworks */,
+				96D1D5D32193C79F00618663 /* NXLAuth.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +39,7 @@
 		56A1F8965EACDA6A5FB2023A /* libPods-NXLAuthExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NXLAuthExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72137142F6C8BFCEB56545F3 /* libPods-testAppAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testAppAuth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96801174217868730058AEDF /* configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = configuration.plist; sourceTree = "<group>"; };
-		96CDBA5E219275DE00F7EB57 /* NXLAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NXLAuth.framework; sourceTree = "<group>"; };
+		96D1D5D02193C79800618663 /* NXLAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NXLAuth.framework; sourceTree = "<group>"; };
 		96F40E9F216DAFBC00B4DD85 /* NXLAuthExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NXLAuthExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F40EA2216DAFBC00B4DD85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96F40EA3216DAFBC00B4DD85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,8 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96CDBA60219275E700F7EB57 /* NXLAuth.framework in Frameworks */,
 				6D2697D697DF9E024DF8F43B /* libPods-NXLAuthExample.a in Frameworks */,
+				96D1D5D22193C79F00618663 /* NXLAuth.framework in Frameworks */,
+				96D1D5D12193C79800618663 /* NXLAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +79,7 @@
 		96F40E96216DAFBC00B4DD85 = {
 			isa = PBXGroup;
 			children = (
-				96CDBA5E219275DE00F7EB57 /* NXLAuth.framework */,
+				96D1D5D02193C79800618663 /* NXLAuth.framework */,
 				96F40EA1216DAFBC00B4DD85 /* NXLAuthExample */,
 				96F40EA0216DAFBC00B4DD85 /* Products */,
 				96F40EEA216DB12700B4DD85 /* Frameworks */,
@@ -370,7 +372,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jason.testAppAuth;
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.nexlife.nxlauthExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -393,7 +395,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jason.testAppAuth;
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.nexlife.nxlauthExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
