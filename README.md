@@ -47,6 +47,8 @@ Certified providers.
 2. Update `ClientID` with your new client id.
 3. Update `RedirectURI` redirect URI
 
+![configuration_plist](/images/configuration_plist.png)
+
 #### In the file `Info.plist`
 
 Fully expand "URL types" (a.k.a. `CFBundleURLTypes`) and replace
