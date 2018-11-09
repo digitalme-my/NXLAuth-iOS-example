@@ -1,4 +1,4 @@
-# Using AppAuth for iOS and macOS with PingFederate
+# Using NXLAuth for iOS with PingFederate
 
 This example uses the *PingFederate OAuth2 Playground* sample application to quickly stand up a new PingFederate server as an OpenID Connect Provider.
 
@@ -39,17 +39,6 @@ Use the following information to configure the examples.
 | Client ID     | The `Client ID` from the OAuth client configuration (e.g. `ac_client`). |
 | Client Secret | Blank. The authorization code client does not have a secret. |
 | Redirect URI  | The `Redirect URI` from the OAuth client configuration (e.g. `com.example.appauth://cb`). | 
-
-
-### macOS
-
-| Configuration | Description      |
-|---------------|------------------|
-| Issuer        | The hostname of your PingFederate server, include the port if applicable (e.g. `https://pf.example.com:9031`). |
-| Client ID     | The `Client ID` from the OAuth client configuration (e.g. `ac_client`). |
-| Client Secret | Blank. The authorization code client does not have a secret. |
-| Redirect URI  | For macOS, you can use either the loopback interface (where AppAuth will generate the redirect URI for you), or a custom scheme. For a custom scheme, use the `Redirect URI` from the OAuth client configuration (e.g. `com.example.appauth://cb`). | 
-
 
 
 ## Support Information
