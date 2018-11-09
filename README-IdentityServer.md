@@ -1,8 +1,8 @@
-# Using AppAuth with [IdentityServer4](https://github.com/IdentityServer/IdentityServer4)
+# Using NXLAuth with [IdentityServer4](https://github.com/IdentityServer/IdentityServer4)
 
-Since IdentityServer4 is a certified OpenID Connect implementation and supports PKCE, there are no special steps needed to use it with AppAuth.
+Since IdentityServer4 is a certified OpenID Connect implementation and supports PKCE, there are no special steps needed to use it with NXLAuth.
 
-Sample IdentityServer client definition that works OOB with the AppAuth sample:
+Sample IdentityServer client definition that works OOB with the NXLAuth sample:
 
 ```csharp
 var client = new Client
@@ -20,12 +20,12 @@ var client = new Client
 };
 ```
 
-## Connecting the AppAuth sample to the IdentityServer4 demo instance
+## Connecting the NXLAuth sample to the IdentityServer4 demo instance
 
 You can find a demo instance of IdentityServer4 at [https://demo.identityserver.io](https://demo.identityserver.io). 
 On the main page you can find a number of registered clients and their configuration (all clients can use arbitrary redirect URIs).
 
-The following changes are required for the AppAuth sample:
+The following changes are required for the NXLAuth sample:
 
 ```
 // set the issuer
