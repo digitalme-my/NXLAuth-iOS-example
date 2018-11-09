@@ -1,4 +1,4 @@
-# Using AppAuth with [Okta](https://developer.okta.com/docs/api/resources/oidc.html)
+# Using NXLAuth with [Okta](https://developer.okta.com/docs/api/resources/oidc.html)
 
 Since Okta is a certified OpenID Connect provider and supports PKCE by default, configuration is quick and simple. There are no additional libraries or tools required.
 
@@ -21,7 +21,7 @@ You can create an Okta developer account at [https://developer.okta.com/](https:
 
 **Note:** *As with any Okta application, make sure you assign Users or Groups to the OpenID Connect Client. Otherwise, no one can use it.*
 
-The following changes are required for the AppAuth sample:
+The following changes are required for the NXLAuth sample:
 
 ```
 // set the issuer
