@@ -37,7 +37,7 @@ How to get this information varies by IdP, but we have
 [instructions](/README.md#openid-certified-providers) for some OpenID
 Certified providers.
 
-### OpenID Certified Providers
+## OpenID Certified Providers
 
 Those with instructions on file:
 
