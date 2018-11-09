@@ -34,8 +34,15 @@ client ID, Issuer, Redirect URI
 * Redirect URI
 
 How to get this information varies by IdP, but we have
-[instructions](./README.md#openid-certified-providers) for some OpenID
+[instructions](/README.md#openid-certified-providers) for some OpenID
 Certified providers.
+
+Those with instructions on file:
+
+* [Google](README-Google.md)
+* [IdentityServer](README-IdentityServer.md)
+* [Okta](README-Okta.md)
+* [PingFederate](README-PingFederate.md)
 
 ### Configure the Example
 
