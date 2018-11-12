@@ -19,6 +19,9 @@
 @property (weak, nonatomic) IBOutlet UITextView *logTextView;
 @property (weak, nonatomic) IBOutlet UITextView *accessToken;
 @property (weak, nonatomic) IBOutlet UITextView *idToken;
+@property (weak, nonatomic) IBOutlet UIButton *logoutButton;
+@property (weak, nonatomic) IBOutlet UIButton *apiButton;
+@property (weak, nonatomic) IBOutlet UIButton *userinfoButton;
 
 @property(nonatomic, strong, nullable) OIDAuthState *authState;
 

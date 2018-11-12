@@ -45,6 +45,33 @@ static NSString *const kAppAuthExampleAuthStateKey = @"currentAuthState";
     _idToken.layer.borderColor = [UIColor colorWithWhite:0.8 alpha:1.0].CGColor;
     _idToken.layer.borderWidth = 1.0f;
     // Do any additional setup after loading the view, typically from a nib.
+    _loginButton.layer.borderWidth = 1.0f;
+    _loginButton.layer.borderColor = [UIColor colorWithRed:0.24 green:0.80 blue:0.50 alpha:1.0].CGColor;
+    _loginButton.layer.cornerRadius = 5;
+//    _loginButton.layer.backgroundColor = [UIColor colorWithRed:0.40 green:0.76 blue:0.23 alpha:1.0].CGColor;
+    [_loginButton setTitleColor:[UIColor colorWithRed:0.24 green:0.80 blue:0.50 alpha:1.0] forState:UIControlStateNormal];
+    
+    _apiButton.layer.borderWidth = 1.0f;
+    _apiButton.layer.borderColor = [UIColor colorWithRed:0.40 green:0.40 blue:0.40 alpha:1.0].CGColor;
+    _apiButton.layer.cornerRadius = 5;
+    [_apiButton setTitleColor:[UIColor colorWithRed:0.40 green:0.40 blue:0.40 alpha:1.0] forState:UIControlStateNormal];
+    
+    _userinfoButton.layer.borderWidth = 1.0f;
+    _userinfoButton.layer.borderColor = [UIColor colorWithRed:0.40 green:0.40 blue:0.40 alpha:1.0].CGColor;
+    _userinfoButton.layer.cornerRadius = 5;
+    [_userinfoButton setTitleColor:[UIColor colorWithRed:0.40 green:0.40 blue:0.40 alpha:1.0] forState:UIControlStateNormal];
+    
+    _loginButton.layer.borderWidth = 1.0f;
+    _loginButton.layer.borderColor = [UIColor colorWithRed:0.40 green:0.40 blue:0.40 alpha:1.0].CGColor;
+    _loginButton.layer.cornerRadius = 5;
+    //    _loginButton.layer.backgroundColor = [UIColor colorWithRed:0.40 green:0.76 blue:0.23 alpha:1.0].CGColor;
+    [_loginButton setTitleColor:[UIColor colorWithRed:0.40 green:0.40 blue:0.40 alpha:1.0] forState:UIControlStateNormal];
+    
+    _logoutButton.layer.borderWidth = 1.0f;
+    _logoutButton.layer.borderColor = [UIColor colorWithRed:1.00 green:0.00 blue:0.00 alpha:1.0].CGColor;
+    _logoutButton.layer.cornerRadius = 5;
+    //    _loginButton.layer.backgroundColor = [UIColor colorWithRed:0.40 green:0.76 blue:0.23 alpha:1.0].CGColor;
+    [_logoutButton setTitleColor:[UIColor colorWithRed:1.00 green:0.00 blue:0.00 alpha:1.0] forState:UIControlStateNormal];
     [self loadState];
     [self updateUI];
     
@@ -458,15 +485,36 @@ static NSString *const kAppAuthExampleAuthStateKey = @"currentAuthState";
 }
 
 - (void)updateUI {
+    NSLog(@"UPDATE UI");
     // dynamically changes authorize button text depending on authorized state
     if (!_authState) {
         _status.text = nil;
         _accessToken.text = nil;
         _idToken.text = nil;
         [self logMessage:@"[Client] Auth Status: %@", nil];
+        _loginButton.layer.borderColor = [UIColor colorWithRed:0.24 green:0.80 blue:0.50 alpha:1.0].CGColor;
+        [_loginButton setTitleColor:[UIColor colorWithRed:0.24 green:0.80 blue:0.50 alpha:1.0] forState:UIControlStateNormal];
+        _loginButton.layer.backgroundColor = [UIColor clearColor].CGColor;
+        _apiButton.layer.borderColor = [UIColor colorWithRed:0.40 green:0.40 blue:0.40 alpha:1.0].CGColor;
+        [_apiButton setTitleColor:[UIColor colorWithRed:0.40 green:0.40 blue:0.40 alpha:1.0] forState:UIControlStateNormal];
+        _userinfoButton.layer.borderColor = [UIColor colorWithRed:0.40 green:0.40 blue:0.40 alpha:1.0].CGColor;
+        [_userinfoButton setTitleColor:[UIColor colorWithRed:0.40 green:0.40 blue:0.40 alpha:1.0] forState:UIControlStateNormal];
+        _logoutButton.layer.borderColor = [UIColor colorWithRed:1.00 green:0.00 blue:0.00 alpha:1.0].CGColor;
+        [_logoutButton setTitleColor:[UIColor colorWithRed:1.00 green:0.00 blue:0.00 alpha:1.0] forState:UIControlStateNormal];
+         _logoutButton.layer.backgroundColor = [UIColor clearColor].CGColor;
     } else {
         _status.text = @"Authenticated";
         [self logMessage:@"[Client] Auth Status: Authenticated"];
+        _loginButton.layer.borderColor = [UIColor colorWithRed:0.24 green:0.80 blue:0.50 alpha:1.0].CGColor;
+        [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _loginButton.layer.backgroundColor = [UIColor colorWithRed:0.24 green:0.80 blue:0.50 alpha:1.0].CGColor;
+        _logoutButton.layer.borderColor = [UIColor colorWithRed:1.00 green:0.00 blue:0.00 alpha:1.0].CGColor;
+        [_logoutButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _logoutButton.layer.backgroundColor = [UIColor colorWithRed:1.00 green:0.00 blue:0.00 alpha:1.0].CGColor;
+        _apiButton.layer.borderColor = [UIColor colorWithRed:0.17 green:0.75 blue:0.87 alpha:1.0].CGColor;
+        [_apiButton setTitleColor:[UIColor colorWithRed:0.17 green:0.75 blue:0.87 alpha:1.0] forState:UIControlStateNormal];
+        _userinfoButton.layer.borderColor = [UIColor colorWithRed:0.17 green:0.75 blue:0.87 alpha:1.0].CGColor;
+        [_userinfoButton setTitleColor:[UIColor colorWithRed:0.17 green:0.75 blue:0.87 alpha:1.0] forState:UIControlStateNormal];
         
         _accessToken.text = _authState.lastTokenResponse.accessToken;
         
@@ -525,15 +573,16 @@ static NSString *const kAppAuthExampleAuthStateKey = @"currentAuthState";
 
 
 - (IBAction)logout:(id)sender {
-    NSLog(@"Logout");
+    NSLog(@"Logout1");
     [self setAuthState:nil];
     NXLAppAuthManager *ssoMng = [[NXLAppAuthManager alloc] init];
     [ssoMng logOut];
     _status.text = nil;
     _logTextView.text = @"";
+//    [self updateUI];
 }
 - (IBAction)logOutHome:(id)sender {
-    NSLog(@"Logout");
+    NSLog(@"Logout2");
     [self setAuthState:nil];
     NXLAppAuthManager *ssoMng = [[NXLAppAuthManager alloc] init];
     [ssoMng logOut];
