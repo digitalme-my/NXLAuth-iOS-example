@@ -70,3 +70,5 @@ would be `com.example.app`.
 
 Now your example should be ready to run.
 
+<img src="/images/exampleApp.gif" width="35%" height="35%" />
+
