@@ -89,14 +89,14 @@ static NSString *const kAppAuthExampleAuthStateKey = @"currentAuthState";
     }];
 }
 - (IBAction)getUserInfo:(id)sender {
-    NXLAppAuthManager *ssoMng = [[NXLAppAuthManager alloc] init];
-    [ssoMng getUserInfo:^(NSDictionary * _Nonnull response) {
+    NXLAppAuthManager *nexMng = [[NXLAppAuthManager alloc] init];
+    [nexMng getUserInfo:^(NSDictionary * _Nonnull response) {
         [self logMessage:@"[Client] User Info: %@", response];
     }];
 }
 
 - (IBAction)callApi:(id)sender {
-    NXLAppAuthManager *ssoMng = [[NXLAppAuthManager alloc] init];
+    NXLAppAuthManager *nexMng = [[NXLAppAuthManager alloc] init];
     NSURL *userinfoEndpoint =
     _authState.lastAuthorizationResponse.request.configuration.discoveryDocument.userinfoEndpoint;
     if (!userinfoEndpoint) {
@@ -106,7 +106,7 @@ static NSString *const kAppAuthExampleAuthStateKey = @"currentAuthState";
     NSString *currentAccessToken = _authState.lastTokenResponse.accessToken;
     [self logMessage:@"[Client] Performing userinfo request"];
     //    [self logMessage:@"[Client] AuthState: %@", _authState];
-    [ssoMng getFreshToken:^(NSString * _Nonnull accessToken, NSString * _Nonnull idToken, OIDAuthState * _Nonnull currentAuthState, NSError * _Nullable error) {
+    [nexMng getFreshToken:^(NSString * _Nonnull accessToken, NSString * _Nonnull idToken, OIDAuthState * _Nonnull currentAuthState, NSError * _Nullable error) {
         [self setAuthState:currentAuthState];
         if (error) {
             [self logMessage:@"[Client1] Error fetching fresh tokens: %@", [error localizedDescription]];
