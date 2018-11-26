@@ -63,11 +63,11 @@ static NSString *const kAppAuthExampleAuthStateKey = @"currentAuthState";
     AppDelegate *appDelegate = (AppDelegate *) [UIApplication sharedApplication].delegate;
     NXLAppAuthManager *nexMng = [[NXLAppAuthManager alloc] init];
     NSArray *scopes = @[ ScopeOpenID, ScopeOffline];
-    [nexMng ssoAuthRequest:scopes :^(OIDAuthorizationRequest *request){
+    [nexMng authRequest:scopes :^(OIDAuthorizationRequest *request){
         [self logMessage:@"[Client] Initiating authorization request with scope: %@", request.scope];
         [self logMessage:@"[Client] Request URL: %@", request.authorizationRequestURL];
         
-        appDelegate.currentAuthorizationFlow = [nexMng ssoAuthStateByPresentingAuthorizationRequest:request presentingViewController:self :^(OIDAuthState * _Nonnull authState) {
+        appDelegate.currentAuthorizationFlow = [nexMng authStateByPresentingAuthorizationRequest:request presentingViewController:self callback:^(OIDAuthState * _Nullable authState, NSError * _Nullable error) {
             NSLog(@"[Client] authState: %@", authState);
             NSLog(@"[Client] authorizationCode: %@", authState.lastAuthorizationResponse.authorizationCode);
             NSLog(@"[Client] accessToken: %@", authState.lastTokenResponse.accessToken);
@@ -80,11 +80,10 @@ static NSString *const kAppAuthExampleAuthStateKey = @"currentAuthState";
                 [self setAuthState:authState];
                 [self logMessage:@"[Client] Got authorization tokens. Access token: %@",authState.lastTokenResponse.accessToken];
                 
+            } else {
+                [self logMessage:@"[Client] Authorization error: %@", [error localizedDescription]];
+                [self setAuthState:nil];
             }
-            //            else {
-            //                [self logMessage:@"[Client] Authorization error: %@", [error localizedDescription]];
-            //                                                                               [self setAuthState:nil];
-            
         }];
     }];
 }

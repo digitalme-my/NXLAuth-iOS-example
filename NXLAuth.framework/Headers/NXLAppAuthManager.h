@@ -21,10 +21,6 @@
  */
 @property(nonatomic, strong, nullable) OIDAuthState *authState;
 
-/*! @brief A testing method.
- */
-- (void)testMethod;
-
 // get Authorization Request URL
 /*! @brief Creates an authorization request with opinionated defaults (a secure @c state, and
  PKCE with S256 as the @c code_challenge_method).
@@ -33,7 +29,7 @@
  @remarks This convenience initializer generates a state parameter and PKCE challenges
  automatically.
  */
-- (void)ssoAuthRequest:(nullable NSArray<NSString *> *)scopes :(void (^)(OIDAuthorizationRequest *request))completion;
+- (void)authRequest:(nullable NSArray<NSString *> *)scopes :(void (^)(OIDAuthorizationRequest *request))completion;
 
 // perform Authorization Request
 /*! @brief Convenience method to create a @c OIDAuthState by presenting an authorization request from ssoAuthRequest method
@@ -50,7 +46,7 @@
  receives a @c OIDExternalUserAgentSession.cancel message, or after processing a
  @c OIDExternalUserAgentSession.resumeExternalUserAgentFlowWithURL: message.
  */
-- (id<OIDExternalUserAgentSession>)ssoAuthStateByPresentingAuthorizationRequest:(OIDAuthorizationRequest *)authorizationRequest presentingViewController:(UIViewController *)presentingViewController :(void (^)(OIDAuthState *authState))completion;
+- (id<OIDExternalUserAgentSession>)authStateByPresentingAuthorizationRequest:(OIDAuthorizationRequest *)authorizationRequest presentingViewController:(UIViewController *)presentingViewController callback:(OIDAuthStateAuthorizationCallback)completion;
 
 // get fresh token
 /*! @brief Calls the block with a valid access token (refreshing it first, if needed), or if a
@@ -60,6 +56,10 @@
  @param completion Return a valid access token, id token and current auth state.
  */
 - (void)getFreshToken :(void (^)(NSString *_Nonnull accessToken, NSString *_Nonnull idToken, OIDAuthState *currentAuthState, NSError *_Nullable error))completion;
+
+/*! @brief Clear SDK Auth State.
+ */
+- (void)clearAuthState;
 
 // get User Info
 /*! @brief a simple method to return user information based on the valid access token. Refreshing token if needed.
