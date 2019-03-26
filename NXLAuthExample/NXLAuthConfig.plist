@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>Issuer</key>
-			<string>https://auth.sso.unifi.space</string>
+			<string>https://staging-identity.nexlife.com.my</string>
 			<key>ClientID</key>
 			<string>99917a29-ffa7-45b6-843b-4602319895c3</string>
 			<key>RedirectURI</key>
